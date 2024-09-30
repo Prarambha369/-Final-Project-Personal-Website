@@ -35,11 +35,10 @@ header nav ul li {
 
 header nav ul li a {
   color: #fff;
-  text-decoration: none;
+  text-decoration: underline;
   padding: 10px 20px;
   transition: all 0.3s ease;
   border: 2px solid transparent;
-  text-decoration: line-through; /* Added cross text decoration */
 }
 
 header nav ul li a:hover {
