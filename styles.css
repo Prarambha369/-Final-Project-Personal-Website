@@ -30,11 +30,22 @@ header nav ul {
 
 header nav ul li {
   margin: 0 1rem;
+  position: relative;
 }
 
 header nav ul li a {
   color: #fff;
   text-decoration: none;
+  padding: 10px 20px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+header nav ul li a:hover {
+  color: #000;
+  background: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 /* Main Styling */
