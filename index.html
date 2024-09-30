@@ -60,7 +60,7 @@
 <div class="about-container">
       <p>Hi, I'm Prarambha369, a passionate web developer with experience in HTML and CSS. I enjoy creating personal and professional websites that are both functional and visually appealing. This personal website is a showcase of my skills and projects. Feel free to explore my work and get in touch with me through the contact section below.</p>
        <img src="Screenshot 2024-09-30 230350.png" alt="Side Banner">
-<img src="aipfp.png" alt="Picture">
+<img id="profile-image" class="circle-profile" alt="Picture">
 </div>
     </section>
   
@@ -126,5 +126,12 @@
   <footer>
     <p>&copy; 2024 Prarambha369</p>
   </footer>
+
+<script>
+    const images = ["aipfp.png", "aipfp4.png", "aipfp2.png", "aipfp3.png"];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("profile-image").src = randomImage;
+  </script>
+
 </body>
 </html>
