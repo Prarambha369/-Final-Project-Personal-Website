@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Personal Site</title>
   <link href="styles.css" rel="stylesheet" />
-<style>
+  <style>
     .about-container {
       display: flex;
       align-items: center;
@@ -15,7 +15,7 @@
       max-width: 200px;
       height: auto;
     }
- .contact-container {
+    .contact-container {
       max-width: 800px;
       margin: 0 auto;
     }
@@ -33,13 +33,23 @@
       padding: 15px 20px;
       font-size: 1.2em;
     }
+    #about {
+      position: relative;
+    }
+    #about .background-img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      filter: blur(8px);
+      z-index: -1;
+      opacity: 0.5;
+    }
   </style>
-
-
 </head>
 <body>
-
-
   <header>
     <nav>
       <ul>
@@ -48,43 +58,31 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-
-
-
-
   </header>
- <main>
+  <main>
     <img src="linkedIn.png" alt="Banner" style="width: 100%; height: auto;">
     <section id="about">
       <h1>About Me</h1>
-<div class="about-container">
-      <p>Hi, I'm Prarambha369, a passionate web developer with experience in HTML and CSS. I enjoy creating personal and professional websites that are both functional and visually appealing. This personal website is a showcase of my skills and projects. Feel free to explore my work and get in touch with me through the contact section below.</p>
-       <img src="Screenshot 2024-09-30 230350.png" alt="Side Banner">
-<img id="profile-image" class="circle-profile" alt="Picture">
-</div>
+      <img class="background-img" src="Screenshot 2024-09-30 230350.png" alt="Side Banner">
+      <div class="about-container">
+        <p>Hi, I'm Prarambha369, a passionate web developer with experience in HTML and CSS. I enjoy creating personal and professional websites that are both functional and visually appealing. This personal website is a showcase of my skills and projects. Feel free to explore my work and get in touch with me through the contact section below.</p>
+        <img id="profile-image" class="circle-profile" alt="Picture">
+      </div>
     </section>
-  
-
-  <section id="projects">
+    <section id="projects">
       <h1>Projects</h1>
       <div class="project">
-        <h2>3n-1-Problem </h2>
+        <h2>3n-1-Problem</h2>
         <img src="Screenshot 2024-09-30 230109.png">
         <p>Collatz Conjecture or 3n-1-Problem</p>
         <a href="https://github.com/Prarambha369/3n-1-Problem">Source Code</a>
-        
-
-
-</div>
+      </div>
       <div class="project">
         <h2>Resturant-menu</h2>
         <img src="Screenshot 2024-09-30 230103.png" alt="resturant menu">
         <p>Restaurant Menu In this Final Project, you'll create a page of a full fledged restaurant menu that includes a form for placing an order!</p>
         <a href="https://github.com/Prarambha369/resturant-menu">Source Code</a>
         <a href="https://prarambha369.github.io/resturant-menu/">Live Demo</a>
-      </div>
-
-
       </div>
       <div class="project">
         <h2>Simple Html Web Form</h2>
@@ -93,45 +91,37 @@
         <a href="https://github.com/Prarambha369/SimpleHtmlWebForm">Source Code</a>
         <a href="https://prarambha369.github.io/SimpleHtmlWebForm/">Live Demo</a>
       </div>
-
-    
-
-
-
+    </section>
     <section id="contact">
       <h1>Contact</h1>
-     <div class="contact-container">
-  <h1>Contact me </h1>
-  <form target="_blank" action="https://formsubmit.co/prarambhabashyal@gmail.com" method="POST">
-    <div class="form-group">
-      <div class="form-row">
-        <div class="col">
-          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
-        </div>
-        <div class="col">
-          <input type="email" name="email" class="form-control" placeholder="Email Address" required>
-        </div>
+      <div class="contact-container">
+        <h1>Contact me</h1>
+        <form target="_blank" action="https://formsubmit.co/prarambhabashyal@gmail.com" method="POST">
+          <div class="form-group">
+            <div class="form-row">
+              <div class="col">
+                <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+              </div>
+              <div class="col">
+                <input type="email" name="email" class="form-control" placeholder="Email Address" required>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Message</button>
+        </form>
       </div>
-    </div>
-    <div class="form-group">
-      <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
-    </div>
-    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Message</button>
-  </form>
-</div>
-</form>
-    
     </section>
   </main>
   <footer>
     <p>&copy; 2024 Prarambha369</p>
   </footer>
-
-<script>
+  <script>
     const images = ["aipfp.png", "aipfp4.png", "aipfp2.png", "aipfp3.png"];
     const randomImage = images[Math.floor(Math.random() * images.length)];
     document.getElementById("profile-image").src = randomImage;
   </script>
-
 </body>
 </html>
