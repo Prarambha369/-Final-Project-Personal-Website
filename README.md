@@ -39,6 +39,14 @@ For the CSS, create a styles.css file and make sure to include what we learned t
 
 
 ## Submit Your Project
+
+
+
 After completing your project, join our Community and submit it to the Final Project channel. One of our team members will get back to you with the feedback and the completion status!
 
 We usually take 2-3 business days for a project review.
+
+
+# [Certificate](https://www.codedex.io/certificates/6e9822ae-95ab-478f-9177-c5fbb310268f)
+
+![image](https://media.licdn.com/dms/image/v2/D4E2DAQGI25zM_poP8g/profile-treasury-image-shrink_1920_1920/profile-treasury-image-shrink_1920_1920/0/1728972040193?e=1729620000&v=beta&t=GJoLeWUFLKmuikImiXmCvDjKatfe-wO2NC1jI8RD8vo)
